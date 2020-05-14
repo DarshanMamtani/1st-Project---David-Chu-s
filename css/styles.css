@@ -1,0 +1,434 @@
+body{
+  font-size: 16px;
+  color:  white;
+  background-color: #61122f;
+}
+
+/*****HEADER-NavBar*****/
+
+/* setting bg color of navbar */
+#header-nav{
+  border-radius: 0px;
+  border: 0px;
+  background-color: #f6b319;
+}
+/* setting logo */
+#logo{
+  background: url("../images/restaurant-logo_large.png");
+  width: 150px;
+  height: 150px;
+  margin: 10px 15px 10px 0px;
+}
+/* setting Brand Name */
+.navbar-brand{
+  padding-top: 25px;
+}
+/* Brand Name */
+.navbar-brand h1{
+  color: #557c3e;
+  font-size: 1.5em;
+  text-transform: uppercase;
+  font-weight: bold;
+  text-shadow: 1px 1px 1px #222;
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+/* Removing underine from link */
+.navbar-brand a:hover, .navbar-brand a:focus{
+  text-decoration: none;
+}
+/* setting K-logo */
+.navbar-brand p{
+  color: #000;
+  text-transform: uppercase;
+  margin-top: 15px;
+}
+/* setting menu items */
+#nav-list{
+  margin-top: 10px;
+}
+
+#nav-list a{
+  color: #951c49;
+  text-align: center;
+}
+
+#nav-list a:hover{
+  background-color: lightgrey;
+}
+
+#nav-list a span{
+  font-size: 1.5em;
+}
+/* setting phone no. */
+#phone{
+  margin-top: 10px;
+}
+
+#phone a{
+  text-align: right;
+  padding-bottom: 0px;
+}
+/* settin we deliver text*/
+#phone div{
+  color: #557c3e;
+  text-align: right;
+  padding-right: 15px;
+}
+
+.navbar-header button.navbar-toggle, .navbar-header .icon-bar{
+  border: 1px solid #61122f;
+}
+.navbar-header button.navbar-toggle{
+  clear: both;
+  margin-top: -30px;
+}
+
+/*****END of HEADER*****/
+
+
+
+/*****MAIN PAGE*****/
+
+/* Setting box shadow for main image */
+.container .jumbotron{
+  box-shadow: 0px 0px 8px #f6b319;
+  border: 2px solid #3f0c1f;
+}
+
+/* Setting the tile */
+#menu-tile, #specials-tile, #map-tile{
+  width: 100%;
+  height: 250px;
+  margin-bottom: 15px;
+  position: relative;
+  border: 2px solid #3f0c1f;
+  overflow: hidden;
+}
+#menu-tile:hover, #specials-tile:hover, #map-tile:hover{
+  box-shadow: 0px 0px 10px #f6b319;
+}
+/* Setting images in tiles */
+#menu-tile{
+  background: url("/images/menu-tile.jpg") no-repeat;
+  background-position: center;
+}
+#specials-tile{
+  background: url("/images/specials-tile.jpg") no-repeat;
+  background-position: center;
+}
+/* Setting text of tiles */
+#menu-tile span, #specials-tile span, #map-tile span{
+  position: absolute;
+  bottom: 0px;
+  right: 0px;
+  width: 100%;
+  text-align: center;
+  font-size: 1.5em;
+  text-transform: uppercase;
+  background-color: #3f0c1f;
+  color: white;
+  opacity: 0.8;
+}
+
+/*****END of MAIN PAGE*****/
+
+
+/*****FOOTER*****/
+.panel-footer{
+  margin-top: 30px;
+  padding-top: 35px;
+  padding-bottom: 30px;
+  background-color: #f6b319;
+  opacity: 1;
+  color: #61122f;
+  border: 0px;
+}
+
+.panel-footer div.row{/*Separating copyright text*/
+  margin-bottom: 35px;
+}
+
+#hours, #address{ /*Separating text from each other*/
+  line-height: 2;
+}
+#hours span, #address span{ /*Increasing size of Hours: and Address:*/
+  font-size: 1.5em;
+}
+
+#address p{ /*Setting the delivery text below address*/
+  color: #557c3e;
+  font-size: 0.9em;
+  line-height: 1.8;
+}
+#testimonials{ /*Setting Testimonials*/
+  font-style: italic;
+}
+
+#testimonials p:nth-child(2){ /*Giving Margin to 2nd paragraph*/
+  margin-top: 25px;
+}
+
+/*****END of FOOTER*****/
+
+
+/*****MENU PAGE*****/
+.category-tile{
+  position: relative;
+  width: 200px;
+  height: 200px;
+  border: 1px solid #3f0c1f;
+  overflow: hidden;
+  margin: 0px auto 15px;
+}
+
+.category-tile span{
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  text-align: center;
+  background-color: #3f0c1f;
+  opacity: 0.8;
+  width: 100%;
+  color: #fff;
+  font-size: 1.2em;
+  text-transform: uppercase;
+}
+
+.category-tile:hover{
+  box-shadow: 0px 0px 10px #f6b319;
+}
+
+#menu-title + div{
+  margin-bottom: 50px;
+}
+
+/*****END of Menu-Page*****/
+
+
+/*****Single-Category Page*****/
+#menu-category-title{
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+#menu-category-title + div{
+  margin-top: 10px;
+  margin-bottom: 50px;
+}
+
+.menu-item-tile{
+  margin-bottom: 25px;
+}
+
+.menu-item-tile hr{
+  width: 80%;
+}
+
+/*Setting Price*/
+.menu-item-price{
+  font-size: 1.1em;
+  text-align: right;
+  margin-top: -15px;
+  margin-right: -15px;
+}
+.menu-item-price span{
+  font-size: 0.6em; /*Setting the font-size of bracket in price*/
+}
+
+/* Setting the images */
+.menu-item-photo{
+  position: relative;
+  border: 2px solid #3f0c1f;
+  overflow: hidden;
+  padding: 0px;
+  margin-right: -15px;
+  margin-left: auto;
+  margin-bottom: 20px;
+  max-width: 200px;
+}
+.menu-item-photo div{ /*Setting the item ID*/
+  position: absolute;
+  bottom: 0px;
+  right: 0px;
+  width: 80px;
+  background-color: #557c3e;
+  text-align: center;
+  opacity: 0.9;
+}
+
+/*Setting description*/
+.menu-item-description{
+  padding-right: 30px;
+}
+h3.menu-item-title{ /*Heading of Desc.*/
+  margin: 0 0 10px;
+}
+.menu-item-details{
+  font-size: 0.9em;
+  font-style: italic;
+}
+
+/*****END of Single-Category Page*****/
+
+
+
+/*About Page*/
+#about-tile {
+  font-size: 1.5em;
+  text-align: center;
+  margin-top: 30px;
+}
+
+
+
+/*****MEDIA Queries*****/
+
+
+/***LARGE Devices***/
+@media(min-width: 1200px){
+  /* Main Image */
+  .container .jumbotron{
+    background: url("../images/jumbotron_1200.jpg");
+    height: 675px;
+  }
+}
+
+/***MEDIUM Devices***/
+@media(min-width: 992px) and (max-width: 1199px){
+  /* Reducing logo size */
+  #logo{
+    background: url("/images/restaurant-logo_medium.png");
+    width: 100px;
+    height: 100px;
+    margin: 5px 8px 5px 0px;
+  }
+
+  /* Main Image */
+  .container .jumbotron{
+    background: url("/images/jumbotron_992.jpg");
+    height: 558px;
+  }
+}
+
+/***SMALL Devices***/
+@media(min-width: 768px) and (max-width: 991px){
+  /* Main Image */
+  .container .jumbotron{
+    background: url("/images/jumbotron_768.jpg");
+    height: 432px;
+  }
+}
+
+/***EXTRA SMALL Devices***/
+@media(max-width: 767px){
+  .navbar-brand{
+    padding-top: 10px;
+    height: 80px;
+  }
+
+  .navbar-brand h1{ /*Brand Name*/
+    padding-top: 10px;
+    font-size: 5vw; /*1vw = 1% of viewport width */
+  }
+
+  .navbar-brand p{/*K certified*/
+    font-size: 0.7em;
+    margin-top: 12px;
+    padding-bottom: 20px;
+  }
+
+  .navbar-brand p img{ /*K Logo*/
+    height: 20px;
+  }
+
+  /* Setting Menu(button) items */
+  #collapsable-nav a{
+    font-size: 1.2em;
+  }
+
+  #collapsable-nav a span{
+    font-size: 1em;
+    margin-right: 5px;
+  }
+
+  /* Setting call for xs size */
+  #call-btn > a {
+    font-size: 1.5em;
+    display: block;
+    margin: 0 20px;
+    padding: 5px;
+    background-color: #f6b319;
+    color: #951c49;
+    text-align: right;
+  }
+  #xs-deliver {/*We Deliver*/
+    margin-top: 1px;
+    margin-bottom: 10px;
+    color: #557c3e;
+    font-size: 1em;
+    letter-spacing: .1em;
+    text-transform: uppercase;
+    text-align: right;
+    padding-right: 25px;
+  }
+
+  /* Setting jumbotron */
+  .container .jumbotron{
+    margin-top: 30px;
+    padding: 0px;
+  }
+
+  /* Setting tiles */
+  #menu-tile, #specials-tile, #map-tile{
+    width: 360px;
+    margin: 0px auto 15px;
+  }
+
+  /* Setting FOOTER */
+  .panel-footer section{
+    margin-bottom: 30px;
+    text-align: center;
+  }
+  .panel-footer section:nth-child(3){
+    /* Already margin is given to last section.. So no need to give again */
+    margin-bottom: 30px;
+  }
+
+  .panel-footer section hr{
+    width: 50%;
+    color: #3f0c1f;
+  }
+
+  /* Setting the menu-item-photo and description for
+        Single-Category Page */
+  .menu-item-photo {
+    margin-right: auto;
+  }
+  .menu-item-price {
+    text-align: center;
+  }
+  .menu-item-description {
+    text-align: center;
+    margin-top: 15px;
+  }
+}
+
+/***Extra Extra Small Devives***/
+@media (max-width: 479px){
+  #menu-tile, #specials-tile, #map-tile{
+    width: 300px;
+    align-content: center;
+    margin: 0px auto 15px;
+  }
+
+  /**Setting menu items for extra small screen**/
+  .col-xxs-12{
+    /*Copied from bootstrap for xs screen*/
+    position: relative;
+    min-height: 1px;
+    padding-right: 15px;
+    padding-left: 15px;
+    float: left;
+    width: 100%;
+  }
+}
